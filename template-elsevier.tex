@@ -1,0 +1,99 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   
+% [TITLE] Elsevier Template Main
+%   
+% [AUTHOR] Chen Zhang (CSISS, GMU)
+% [E-MAIL] czhang11@gmu.edu
+%   
+% [PROJECT PAGE] https://github.com/czhang11/latex-manuscript-template
+% [PROJECT DESC] ___edit_description_here___
+%   
+% [FILE NAME] template-elsevier.tex
+% [FILE DESC] ___edit_description_here___
+% [FILE REVISION HISTORY]
+%  - Last Modified: 3/22/2019, 12:07:05
+%  - Created Date: 3/21/2019, 3:13:32
+%   
+%   
+%   Please visit http://chenzhang.org for more information about the author
+%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 DOCUMENTCLASS                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[authoryear,preprint,review,12pt]{elsarticle}
+% \documentclass[final,1p,times,authoryear]{elsarticle}
+% \documentclass[final,1p,times,twocolumn,authoryear]{elsarticle}
+% \documentclass[final,3p,times,authoryear]{elsarticle}
+% \documentclass[final,3p,times,twocolumn,authoryear]{elsarticle}
+% \documentclass[final,5p,times,authoryear]{elsarticle}
+% \documentclass[final,5p,times,twocolumn,authoryear]{elsarticle}
+\journal{NAME OF JOURNAL}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                   PACKAGES                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref} % link
+\usepackage{lineno} % linenumbers
+\usepackage{subcaption}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                             GLOBAL CONFIGURATION                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some global configurations here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                   DOCUMENT                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+    \begin{frontmatter}
+        % *Title
+        \title{Paper Title}
+        % *Authorship
+        \author[a,b]{Chen Zhang \corref{cor1}}
+        \ead{czhang11@gmu.edu}
+        % \author[a,b]{Author 2}
+        % \ead{author2@example.mail}
+        % \author[a,b]{Author 3}
+        % \ead{author3@example.mail}
+        \address[a]{Center for Spatial Information Science and Systems, George Mason University, Fairfax, VA 22030, USA}
+        \address[b]{Department of Geography and Geoinformation Science, George Mason University, Fairfax, VA 22030, USA}
+        \cortext[cor1]{Corresponding author}
+        % *Abstract
+        \begin{abstract}
+        Abstract
+        \end{abstract}
+        % *Keywords    
+        \begin{keyword}
+        keywords
+        \end{keyword}
+    \end{frontmatter}
+
+    % *Main
+    \linenumbers
+    \input{1-introduction}
+    \input{2-method}
+    \input{3-result}
+    \input{4-discussion}
+    \input{5-conclusion}
+
+    % *Acknowledgment
+    \section*{Acknowledgment}
+    This research is supported by \dots
+    
+    % *Reference
+    \section*{Reference}
+    \bibliographystyle{elsarticle-harv}
+    \bibliography{reference}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

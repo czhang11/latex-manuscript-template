@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   
+% [TITLE] IEEE Template Main
+%   
+% [AUTHOR] Chen Zhang (CSISS, GMU)
+% [E-MAIL] czhang11@gmu.edu
+%   
+% [PROJECT PAGE] https://github.com/czhang11/latex-manuscript-template
+% [PROJECT DESC] ___edit_description_here___
+%   
+% [FILE NAME] template-ieee.tex
+% [FILE DESC] ___edit_description_here___
+% [FILE REVISION HISTORY]
+%  - Last Modified: 3/22/2019, 12:06:48
+%  - Created Date: 3/21/2019, 23:48:07
+%   
+%   
+%   Please visit http://chenzhang.org for more information about the author
+%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 DOCUMENTCLASS                                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[journal]{IEEEtran}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                   PACKAGES                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref} % link
+\usepackage{subcaption}
+\usepackage{epsfig}
+\usepackage{url}
+\usepackage{fancybox}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                             GLOBAL CONFIGURATION                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hyphenation{op-tical net-works semi-conduc-tor} % correct bad hyphenation here
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                   DOCUMENT                                   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+  
+  \title{Paper Title}
+
+  \author{Chen~Zhang*,~\IEEEmembership{Student Member,~IEEE}
+          % Author~2,~\IEEEmembership{Member,~IEEE},
+          % and~Author~3
+  \thanks{C. Zhang is with the Center for Spatial Information Science and Systems (CSISS) and Department of Geography and Geoinformation Science, George Mason University, Fairfax, VA 22030, USA.}
+  \thanks{*Corresponding author: C. Zhang (czhang11@gmu.edu).}}
+
+  \markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+  {Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+
+  \maketitle
+
+  \begin{abstract}
+    Abstract
+  \end{abstract}
+  \begin{IEEEkeywords}
+    IEEE, IEEEtran, journal, \LaTeX, paper, template.
+  \end{IEEEkeywords}
+
+  \IEEEpeerreviewmaketitle
+
+  \input{1-introduction}
+  \input{2-method}
+  \input{3-result}
+  \input{4-discussion}
+  \input{5-conclusion}
+
+  \bibliographystyle{IEEEtran}
+  \bibliography{reference}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

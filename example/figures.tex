@@ -1,0 +1,175 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   
+% [TITLE] Examples of Latex Figure Layout
+%   
+% [AUTHOR] Chen Zhang (CSISS, GMU)
+% [E-MAIL] czhang11@gmu.edu
+%   
+% [FILE NAME] figures.tex
+% [FILE DESC] ___edit_description_here___
+% [FILE REVISION HISTORY]
+%  - Last Modified: 3/22/2019, 11:46:25
+%  - Created Date: 3/19/2019, 16:49:15
+%   
+%   
+%   Please visit http://chenzhang.org for more information about the author
+%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% |   |
+% {CAP}
+\begin{figure}[!htb]\ContinuedFloat 
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/fig}
+    \end{subfigure}
+    % Caption
+    \caption{fig}\label{fig:fig}
+\end{figure}
+
+
+% |   |
+% { a }
+% |   |
+% { b }
+% {CAP}
+\begin{figure}[!htb]
+    % 1st row
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/fig-a}
+        \caption{fig-a}\label{fig:fig-a}
+    \end{subfigure}
+    % 2nd row
+    \begin{subfigure}[t]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/fig-b}
+        \caption{fig-b}\label{fig:fig-b}
+    \end{subfigure}
+    % caption
+    \caption{fig}
+    \label{fig:fig}    
+\end{figure}
+
+
+
+% |   | |   |
+% { a } { b }
+%    {CAP}
+\begin{figure}[!htb]
+    \centering
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[height=0.6\textwidth]{img/fig-a}
+        \caption{fig-a}\label{fig:fig-a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[height=0.6\textwidth]{img/fig-b}
+        \caption{fig-b}\label{fig:fig-b}
+    \end{subfigure}
+    \caption{fig}\label{fig:fig}
+\end{figure}
+
+
+
+% |   |
+% { a }
+% |   |
+% { b }
+% {CAP}
+% -----
+% |   |
+% { c }
+% {CAP}
+\begin{figure}[!htb] 
+    % 1st row
+    \begin{subfigure}[!htb]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/fig-a}
+        \caption{fig-a\\\hspace{\textwidth}}\label{fig:fig-a}
+    \end{subfigure}
+    % 2nd row
+    \begin{subfigure}[!htb]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/fig-b}
+        \caption{fig-b\\}\label{fig:fig-b}
+    \end{subfigure}
+    % Caption
+    \caption{Figure}
+    \label{fig:fig}
+\end{figure}
+\begin{figure}[!htb]\ContinuedFloat    
+    % 3rd row
+    \begin{subfigure}[!htb]{\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/fig-c}
+        \caption{fig-c}\label{fig:fig-c}
+    \end{subfigure}
+    % Caption
+    \renewcommand{\thefigure}{\arabic{figure} (Cont.)}
+    \caption{}
+    \renewcommand{\thefigure}{\arabic{figure}}
+\end{figure} 
+
+
+
+
+% |   | |   |
+% { a } { b }
+% |   | |   |
+% { c } { d }
+%    {CAP}
+% -----------
+% |   | |   |
+% { e } { f }
+%    {CAP}
+\begin{figure}[!htb] 
+    \centering
+    % 1st row
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \raisebox{-\height}{\includegraphics[width=\textwidth]{img/fig-a}}
+        \caption{fig-a}\label{fig:fig-a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \raisebox{-\height}{\includegraphics[width=\textwidth]{img/fig-b.png}}
+        \caption{fig-b}\label{fig:fig-b}
+    \end{subfigure}
+    % 2nd row
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \raisebox{-\height}{\includegraphics[width=\textwidth]{img/fig-c.png}}
+        \caption{fig-c}\label{fig:fig-c}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \raisebox{-\height}{\includegraphics[width=\textwidth]{img/fig-d}}
+        \caption{fig-d}\label{fig:fig-d}
+    \end{subfigure}
+    % Caption
+    \caption{fig}\label{fig:fig}
+\end{figure}
+\begin{figure}[!htb]\ContinuedFloat 
+    % 3rd row
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \raisebox{-\height}{\includegraphics[width=\textwidth]{img/fig-e}}
+        \caption{fig-e}\label{fig:fig-e}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \raisebox{-\height}{\includegraphics[width=\textwidth]{img/fig-f}}
+        \caption{fig-f}\label{fig:fig-f}
+    \end{subfigure}
+    % Caption
+    \renewcommand{\thefigure}{\arabic{figure} (Cont.)}
+    \caption{}
+    \renewcommand{\thefigure}{\arabic{figure}}
+\end{figure}

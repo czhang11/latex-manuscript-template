@@ -1,3 +1,7 @@
+## Build path:
+build
+Build
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

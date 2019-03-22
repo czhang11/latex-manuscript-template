@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   
+% [TITLE] ___edit_title_here___
+%   
+% [AUTHOR] Chen Zhang (CSISS, GMU)
+% [E-MAIL] czhang11@gmu.edu
+%   
+% [FILE NAME] table.tex
+% [FILE DESC] ___edit_description_here___
+% [FILE REVISION HISTORY]
+%  - Last Modified: 3/22/2019, 11:46:24
+%  - Created Date: 3/19/2019, 16:56:19
+%   
+%   
+%   Please visit http://chenzhang.org for more information about the author
+%   
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Regular Table
+\begin{table}
+    \centering
+    \caption{Regular Table Example}\label{tab:table-example}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        Class & Support & Precision & Recall & F1 Score\\
+        \hline
+        Class 1 & 832519 & 0.94 & 0.86 & 0.90\\
+        Class 2 & 827942 & 0.86 & 0.93 & 0.90\\
+        Class 3 & 724026 & 0.87 & 0.95 & 0.91\\
+        Class 4 & 212598 & 0.83 & 0.93 & 0.88\\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+% Merged Table Example 1
+\begin{table}[!htb]
+    \centering
+    \caption{Merged Table Example 1}\label{tab:merged-table-example-1}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        Set   & Training Set (Label Set) & Testing Set & Ground Reference Set\\
+        \hline
+        Set 1 & Training Set 1 & Testing Set 1 & Ground Set 1 \\
+              & Training Set 2 & & \\
+              & Training Set 3* & & \\
+        \hline
+        Set 2 & Training Set 1 & Testing Set 1 & Ground Set 1 \\
+              & Training Set 2 & & \\
+              & Training Set 3 & & \\
+        \hline
+        Set 3 & Training Set 1 & Testing Set 1 & Ground Set 1 \\
+              & Training Set 2 & & \\
+              & Training Set 3 & & \\
+        \hline
+        Set 4 & Training Set 1 & Testing Set 1 & Ground Set 1 \\
+              & Training Set 2 & & \\
+              & Training Set 3 & & \\    
+        \hline
+        \multicolumn{4}{|l|}{* some notes here} \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+% Merged Table Example 2
+\begin{table}[!htb]
+    \centering
+    \caption{Merged Table Example 2}\label{tab:merged-table-example-2}
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \multicolumn{4}{|c|}{Class 1} \\
+        \hline
+        Test & Result & Observed & Official \\
+        \hline
+        1 & 13,607,650 & 13,628,727 & 13,900,000 \\
+        2 & 13,420,096 & 13,216,879 & 13,300,000 \\
+        3 & 13,704,565 & 13,537,935 & N/A \\
+        \hline
+
+        \multicolumn{4}{|c|}{Class 2} \\
+        \hline
+        Test & Result & Observed & Official \\
+        \hline
+        1 & 8,971,998 & 9,232,107 & 9,500,000 \\
+        2 & 9,401,789 & 9,785,308 & 10,000,000 \\
+        3 & 9,535,296 & 9,959,717 & N/A \\
+        \hline
+    \end{tabular}
+\end{table}
+
+
+
+
+% Reference:
+% https://tex.stackexchange.com/questions/327681/alignment-of-multiple-figures-in-rows-and-columns
