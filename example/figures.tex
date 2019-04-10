@@ -8,7 +8,7 @@
 % [FILE NAME] figures.tex
 % [FILE DESC] ___edit_description_here___
 % [FILE REVISION HISTORY]
-%  - Last Modified: 3/29/2019, 0:30:59
+%  - Last Modified: 4/09/2019, 23:09:11
 %  - Created Date: 3/19/2019, 16:49:15
 %   
 %   
@@ -19,7 +19,8 @@
 
 % |   |
 % {CAP}
-\begin{figure}[!htb] 
+\begin{figure}[!htb]
+    \centering
     \begin{subfigure}[t]{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{img/fig}
@@ -35,8 +36,9 @@
 % { b }
 % {CAP}
 \begin{figure}[!htb]
+    \centering
     % 1st row
-    \begin{subfigure}[t]{0.5\textwidth}
+    \begin{subfigure}[t]{\textwidth}
         \centering
         \includegraphics[width=\textwidth]{img/fig-a}
         \caption{fig-a}\label{fig:fig-a}
@@ -84,7 +86,8 @@
 % |   |
 % { c }
 % {CAP}
-\begin{figure}[!htb] 
+\begin{figure}[!htb]
+    \centering
     % 1st row
     \begin{subfigure}[!htb]{\textwidth}
         \centering
@@ -113,7 +116,6 @@
     \caption{}
     \renewcommand{\thefigure}{\arabic{figure}}
 \end{figure} 
-
 
 
 
